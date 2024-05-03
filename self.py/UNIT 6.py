@@ -61,4 +61,10 @@ def check_valid_input(letter_guessed, old_letters_guessed):
     return letter_guessed.lower() not in old_letters_guessed
 
 
-# 
+# EX 6.4.2
+def try_update_letter_guessed(letter_guessed, old_letters_guessed):
+    if check_valid_input(letter_guessed,old_letters_guessed):
+        old_letters_guessed.append(letter_guessed)
+        return True
+    print(f"X\n{' -> '.join(old_letters_guessed)}")
+    return False

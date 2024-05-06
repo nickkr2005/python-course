@@ -10,7 +10,7 @@ def are_files_equal(file1, file2):
     return file1_data == file2_data
 
 
-E EX 9.1.2
+# EX 9.1.2
 def main():
     filepath = input("Enter file path: ")
     function = input("Enter the function you ant to preform on the file data: ")
